@@ -9,7 +9,7 @@ switch (month) {
     case 1:
         console.log("january");
         
-        break;// breaks the switch case if its true and comes out of switch if not true then goes ahead
+        break;// breaks the switch case if its true and comes out of switch (aage ki koi statement kaam nhi kregi switch ke andar ki)if not true then goes ahead
 
     default:
         console.log(`default`);
