@@ -9,7 +9,7 @@ switch (month) {
     case 1:
         console.log("january");
         
-        break;
+        break;// breaks the switch case if its true and comes out of switch if not true then goes ahead
 
     default:
         console.log(`default`);
