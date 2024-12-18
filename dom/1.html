@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<style>
+    .bg-black{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body class="bg-black">
+   <div class="parent">
+    <!-- this is a comment -->
+    <div class="day">monay</div>
+    <div class="day">tuesday</div>
+    <div class="day">wed</div>
+    <div class="day">thur</div>
+   </div>
+</body>
+<script>
+  const parent =  document.querySelector('.parent')
+// console.log(parent);
+// console.log(parent.children);
+for (let i = 0;i< parent.children.length; i++  )
+console.log(parent.children[i].textContent)
+//parent.children is an array
+parent.children[1].style.backgroundColor = 'pink'
+console.log(parent.firstElementChild);
+console.log(parent.lastElementChild);
+const dayOne = document.querySelector('.day')//query selector will give only the first value
+console.log(dayOne.innerHTML);
+console.log(dayOne.parentELement);
+console.log(dayOne.nextElementSibling.innerHTML);
+console.log('nodes:',parent.childNodes);
+
+
+</script>
+</html>
