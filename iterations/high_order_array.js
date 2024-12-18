@@ -48,7 +48,7 @@ const myObject = {
     
     
  }
-
+//for in me object ki keys print hoti hai and foroff me array,string,map in ssab ki values
 
  const chutad = ['js','rb','cpp','python','py']
 
