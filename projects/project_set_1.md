@@ -36,3 +36,36 @@ if(e.target.id==='purple'){
 });
 
 ```
+
+##project 2
+
+```javascript
+const form =document.querySelector('form')
+//if u write height an dweight here then u will get empty values and if u write down there then u will get the values after submitting yhe form
+form.addEventListener('submit', (e)=>{
+  e.preventDefault()
+ const height= parseInt(document.querySelector('#height').value)
+ const weight = parseInt(document.querySelector('#weight').value)
+ const results =document.querySelector('#results')
+if(height===''||height<0|| isNaN(height)){
+results.innerHTML='please give valid height'
+}
+else if(weight===''||weight<0|| isNaN(weight)){
+  results.innerHTML='please give valid weight'
+  }
+else{
+ results.innerHTML= (weight/
+  ((height*height)/10000)).toFixed(2)
+  if(results.innerHTML<18.6){
+    results.innerHTML=results.innerHTML+`underweight`
+  }
+  else if(results.innerHTML>18.6&&results.innerHTML<24.9){
+    results.innerHTML=results.innerHTML+ `normal`
+  }
+  else{
+    results.innerHTML=results.innerHTML+`overweight`
+  }
+}
+
+})
+```
