@@ -71,7 +71,8 @@ else{
 ```
 ##project 3
 ```javascript
-document.querySelector('#clock');
+ 
+const clock=  document.querySelector('#clock');
 
 
 
